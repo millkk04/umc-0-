@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body, html {
+        height: 100%;
+        margin: 0;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .circle{
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        background-color: blueviolet;
+        border: 0.5px solid black ;
+        animation: bounce 1.5s ease-in 0.2s infinite;
+    }
+
+    @keyframes bounce {
+        0%,100% {
+            transform: translate(0,0);
+        }
+        40%{
+            transform: translate(0,120px);
+            height: 100px;
+        }
+        50%{
+            transform: translate(0,150px);
+            height: 90px;
+            animation-duration: 0.05s;
+        }
+        55%{
+            transform: translate(0,120px);
+            height: 100px;
+        }
+        85%{
+            transform: translate(0,40px);
+        }
+        90%{
+            transform: translate(0,20px);
+        }
+        95%{
+            transform: translate(0,10px);
+        }
+        99%{
+            transform: translate(0,0);
+        }
+    }
+  </style>
+  
+
+</head>
+<body>
+    <div class="circle"></div>
+</body>

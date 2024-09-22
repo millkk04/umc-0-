@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <div class="moving"></div>
+    <style>
+        div.moving{transform: translate(0); width: 200px; height: 200px; border: 1px solid black;}
+        .moving{
+            transition-property:transform, background;
+            transition-duration: 0.5s;
+            transition: all 0.2 ease-in 0s;
+
+        }
+        div.moving:hover{background: blue;}
+    </style>
+</body>

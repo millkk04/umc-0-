@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+      .moving {
+          
+          width: 200px;
+          height: 200px;
+          background-color: aquamarine;
+          border: 1px solid black;
+      }
+      
+      /* 주석 처리된 부분들 */
+
+      .moving:hover {
+        animation: rotate 0.8s ease-in 0.5s 2;
+          /* animation-name: rotate;
+          animation-duration: 0.8s;
+          animation-delay: 0.5s;
+          animation-direction: reverse;
+          animation-iteration-count: 2;
+          animation-play-state: paused;
+          animation-timing-function: steps(3, end);
+          animation-fill-mode: backwards;
+          animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0); */
+      } 
+
+      @keyframes rotate {
+          0% {
+              transform: rotate(0deg);
+          }
+          100% {
+              transform: rotate(360deg);
+          }
+      }
+  </style>
+</head>
+
+<body>
+  <div class="moving"></div>
+</body>
+
+</html>
